@@ -1,5 +1,26 @@
 git的第一个项目
 用于测试与在线库的链接
 上传至在线库
+
 本地库目录：/home/lhw/lhw_git
 在线库目录：https://github.com/rhfgxg/jld	#江丽丹
+
+上传文件到 github：
+
+git add 第一个文件的文件名
+git add 第二个文件的文件名
+
+git commit -m "提交文件的说明信息"
+
+[master (root-commit) eaadf4e] wrote areadme file	# 文件上传成功
+1 file changed,  		# 有一个文件被修改
+2 insertions(+)			# 添加 (+) 了两行数据
+create mode 100644 上传的文件名
+
+
+#错误信息：
+faral: not a git repository (or any of the parent directories)	# 在 git 文件夹外执行指令
+faral:pathspec '上传文件名' did not match any files		# 此文件不在 git 文件夹内
+
+#commit 一次可以上传多个文件，使用多个 add 添加，然后用 commit 一次性上传
+
